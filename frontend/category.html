@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Category</title>
+    <link rel="stylesheet" href="productCategory.css">
+</head>
+<body>
+    <h1>Product Category Page</h1>
+    <div id="categoryList"></div>
+    <div>
+        <h2>Add New Category</h2>
+        <form id="categoryForm">
+            <label for="categoryName">Category Name:</label>
+            <input type="text" id="categoryName" name="categoryName"><br><br>
+            <label for="categoryDescription">Category Description:</label>
+            <input type="text" id="categoryDescription" name="categoryDescription"><br><br>
+            <button type="submit">Add Category</button>
+        </form>
+    </div>
+    <div id="updateDeleteForm" style="display:none;">
+        <h2>Update Category</h2>
+        <form id="updateForm">
+            <label for="updateCategoryName">Category Name:</label>
+            <input type="text" id="updateCategoryName" name="updateCategoryName"><br><br>
+            <label for="updateCategoryDescription">Category Description:</label>
+            <input type="text" id="updateCategoryDescription" name="updateCategoryDescription"><br><br>
+            <button type="button" id="updateCategoryBtn">Update Category</button>
+            <button type="button" id="deleteCategoryBtn">Delete Category</button>
+            <button type="button" id="cancelUpdateDeleteBtn">Cancel</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
